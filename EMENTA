@@ -1,0 +1,33 @@
+MODULO:
+REACTJS
+
+OBJETIVOS:
+- INSTALAÇÃO DO PROJETO REACTJS
+- CONFIGURACOES
+- PÁGINAS
+- COMPONENTES
+- REACT ROUTER DOM
+
+CONTEUDO:
+- INSTALACAO DA BASE PROJETO REACTJS
+- CONFIGURAÇÕES DO AMBIENTE.
+- CRIANDO A PRIMEIRA PÁGINA
+- CRIANDO O PRIMEIRO COMPONENTS
+- CONHECENDO O REACT ROUTER DOM
+
+REQUISITOS PARA REACTJS:
+- INSTALE O NODEJS
+- EXECUTE OS COMANDOS:
+ 
+ npm create vite@latest
+ cd nome_projeto
+ npm install
+ npm run dev
+
+
+ BiBLIOTECAS DE JS PARA REACT:
+ - npm install bootstrap 
+ - npm install react-bootstrap
+ - npm install react-router-dom
+OU
+- npm i bootstrap react-bootstrap react-router-dom
