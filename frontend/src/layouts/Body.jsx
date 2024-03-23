@@ -1,10 +1,13 @@
-
-// COMPONENTE REACT HEADER
-function Body () {
+import { Container } from "react-bootstrap";
+import Menu from "./Menu";
+function Body (props) {
     return (
-        <main>Body</main>
+        <main>
+            <Container>
+                <Menu />
+                {props.children}
+            </Container>
+        </main>
     )
 }
-
-
 export default Body;

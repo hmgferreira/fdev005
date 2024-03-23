@@ -1,5 +1,4 @@
 
-import './App.css'
 import Footer from './layouts/Footer';
 import Body from './layouts/Body';
 import Header from './layouts/Header';
@@ -15,26 +14,12 @@ function App() {
     <>
       {/* PASSAGEM DE PROPS */}
       <Header nome="IW Training" curso="FullStack" />
-      <Header nome="FAC" curso="ADS" />
-      <Header nome="UNIC" curso="Redes" />
-      
-      {/* PASSAGEM DE CHILDREN */}
-      <Header nome="Pixels">
-        <p>
-          Olá, eu sou Tags Filho
-        </p>
-        <p>
-          COnteudo de Children
-        </p>
-      </Header>
 
-
-      
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/produtos' element={<Produtos />} />
-          <Route path='/contato' element={<Contato />} />
+          <Route path='/' element={<Body><Home /></Body>} />
+          <Route path='/produtos' element={<Body><Produtos /></Body>} />
+          <Route path='/contato' element={<Body><Contato /></Body>} />
         </Routes>
       </BrowserRouter>
 
