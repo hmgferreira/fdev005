@@ -1,0 +1,11 @@
+1. CRIE UM PROJETO EM REACT JS DO ZERO.
+2. INSTALE AS DEPENDENCIAS
+    2.1 npm create vite@latest
+    2.2 Selecione React
+    2.3 npm install react-router-dom
+    2.4 npm install react-bootstrap
+
+3. ZERE TODO O ARQUIVO App.jsx e COPIE O CODIGO DO GITHUB DO NOSSO PROJETO.
+4. CONSULTE O PROJETO DE SALA NO GITHUB E FAÇA COPIE CADA ARQUIVO CONFIRME FIZEMOS EM SALA.
+
+

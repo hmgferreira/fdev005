@@ -1,31 +1,23 @@
+import AppRoutes from "./routes/AppRoutes"
+import PublicRoutes from "./routes/PublicRoutes"
+import { createContext, useState } from "react"
 
-import Footer from './layouts/Footer';
-import Body from './layouts/Body';
-import Header from './layouts/Header';
-import Home from './pages/Home';
-import Produtos from './pages/Produtos';
-import Contato from './pages/Contato';
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+export const AuthContext = createContext();
 
 function App() {
-
+  const[logged, setLogged] = useState(false);
+  
   return (
     <>
-      {/* PASSAGEM DE PROPS */}
-      <Header nome="IW Training" curso="FullStack" />
-
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Body><Home /></Body>} />
-          <Route path='/produtos' element={<Body><Produtos /></Body>} />
-          <Route path='/contato' element={<Body><Contato /></Body>} />
-        </Routes>
-      </BrowserRouter>
-
-      <Footer />
+      <AuthContext.Provider value={{ logged, setLogged }}>
+        {/* IF TERNÁRIO */}
+        {logged ? <AppRoutes /> : <PublicRoutes />}
+      </AuthContext.Provider>
     </>
-  )
+  );
+
+
+ 
 
 }
       
