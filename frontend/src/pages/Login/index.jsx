@@ -11,7 +11,9 @@ function Login() {
         // VERIFICAR NO BANCO DE DADOS SE O EMAIL E A SENHA ESTAO COORRETAS.
         // DEPOIS DA ACESSO AO USUARIO;
         // ALTERAR O USECONTEXT LOGGED PARA TRUE.
-        setLogged(true);
+        // jwt.io
+        localStorage.setItem('token@fdev005', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1hcmNpbyBGZXJyZWlyYSIsImlhdCI6MTUxNjIzOTAyMn0.V3hBbmJfEi986IVvGNoBztM1tSx0dfqx8dXHbFWvFfA*');
+        setLogged(true); 
     }
 
     return (
